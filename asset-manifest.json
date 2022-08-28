@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/moulsiri/moulsiri.github.io/static/css/main.aad0a5ca.css",
-    "main.js": "/moulsiri/moulsiri.github.io/static/js/main.23ff5c85.js",
-    "index.html": "/moulsiri/moulsiri.github.io/index.html",
-    "main.aad0a5ca.css.map": "/moulsiri/moulsiri.github.io/static/css/main.aad0a5ca.css.map",
-    "main.23ff5c85.js.map": "/moulsiri/moulsiri.github.io/static/js/main.23ff5c85.js.map"
+    "main.css": "/covid-data-visualisation/static/css/main.aad0a5ca.css",
+    "main.js": "/covid-data-visualisation/static/js/main.a4c68131.js",
+    "index.html": "/covid-data-visualisation/index.html",
+    "main.aad0a5ca.css.map": "/covid-data-visualisation/static/css/main.aad0a5ca.css.map",
+    "main.a4c68131.js.map": "/covid-data-visualisation/static/js/main.a4c68131.js.map"
   },
   "entrypoints": [
     "static/css/main.aad0a5ca.css",
-    "static/js/main.23ff5c85.js"
+    "static/js/main.a4c68131.js"
   ]
 }
