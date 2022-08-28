@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+    #dataContainer{
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+    #graphContainer{
+        width: 80vw !important;
+        align-items: center !important;
+    }
+    #disContainer{
+        width: 75vw !important;
+    }
+ }
