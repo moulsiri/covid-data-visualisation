@@ -1,8 +1,8 @@
 {
   "name": "covid-data",
   "version": "0.1.0",
-  "private": false,
-  "homepage": "https://github.com/moulsiri/moulsiri.github.io",
+  "homepage": "https://moulsiri.github.io/covid-data-visualisation",
+  "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",

@@ -49,11 +49,12 @@ function App() {
     <>
     <Context value={{disData,setDisData,datData,setDatData,selectedState,setSelection,sNames}}>
       {/* <Navigation></Navigation> */}
-      <Routes>
+      <Home></Home>
+      {/* <Routes>
         <Route path="/" element={<Home></Home>}>
 
         </Route>
-      </Routes>
+      </Routes> */}
     </Context>
 
     </>
