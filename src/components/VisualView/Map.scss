@@ -1,0 +1,121 @@
+@import '../util';
+#map{
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    // background-color: #a7c957;
+    @include mobile(700px){
+        width: 100%;
+        height: 100%;
+    }
+ 
+}
+#svg2{
+    position: absolute;
+    scale:.8;
+    transform-origin: 20% 50%;
+    path{
+        fill: transparent;
+        stroke: black;
+    }
+    @include mobile(1000px){
+        transform-origin: 50% 50%;
+    }
+    // @include mobile(800px){
+    //     scale: .6;
+    //     transform-origin: 10% 50%;
+    // }
+    // @include mobile(700px){
+    //     transform-origin: 10% 10%;
+    // }
+    // @include mobile(600px){
+    //     scale: .5;
+    // }
+    // @include mobile(450px){
+    //     scale:.4;
+    //     transform-origin: 0% 5%;
+    // }
+}
+.mBox{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .mPoint{
+        width:10px;
+        height:10px;
+        // background-color: yellow;
+        border-radius: 50%;
+    }
+}
+
+.graphContainer{
+    width: 100%;
+    height: 60vh;
+    margin-top: 3em;
+}
+.colorCard{
+    position: absolute;
+    top:2%;
+    right:0%;
+    border-radius: 1em;
+    width: 25vmax;
+    height: 5vmax;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.226);
+    background-color: colors(card);
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    @include mobile(1000px){
+        height: 8vmax;
+    }
+    // background-color: red;
+    .ccElm{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 40%;
+        // padding: 0 1em;
+        // background-color: yellow;
+        .cPoint{
+            width: 2em;
+            height: 1em;
+            background-color: #a7c957;
+            cursor: pointer;
+            margin-bottom: .2em;
+            position: relative;
+            &:before{
+                content:" ";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+              
+            }
+            &:active::before{
+                background-color: rgba(255, 255, 255, 0.616);
+            }
+            &:after{
+                content:" ";
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                left:-100%;
+                transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+              
+            }&:hover::after{
+                left:100%;
+                background-color: rgba(255, 255, 255, 0.281);
+                
+            }
+    
+        }
+        h6{
+            cursor: pointer;
+            text-align: center;
+        }
+
+    }
+  
+}

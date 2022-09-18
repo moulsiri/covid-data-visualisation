@@ -1,0 +1,170 @@
+@import '../util';
+
+
+.countryName{
+    font-family: 'Samarkan';
+            font-size: 7em;
+            font-weight: 200;
+            width: 100%;
+            text-align: center;
+            @include mobile(1200px){
+                font-size: 5em;
+            }
+            @include mobile(1000px){
+                font-size: 4em;
+            }
+            @include mobile(700px){
+                padding-right: 1em;
+            }
+            @include mobile(600px){
+                text-align: center;
+                padding: 0;
+            }
+}
+
+.covidData{
+    width: 70%;
+    // height: 60vh;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:colors(card);
+    margin-top: 3em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    margin-bottom: 2em;
+    .cElm{
+        // background-color: yellow;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h6{
+            margin: 1em 0;
+        }
+        p{
+            font-size: .8em;
+            margin-top: .2em;
+        }
+    }
+    @include mobile(1200px){
+        width: 80%;
+    }
+    @include mobile(1000px){
+        width: 80%;
+        margin-top: 0;
+    }
+    @include mobile(700px){
+        width: 70%;
+    margin-top: 1em;
+
+        
+    }
+    @include mobile(600px){
+        width: 80%; 
+    }
+}
+
+.stateName{
+    font-family: $secFont;
+    font-weight: 200;
+    width: 50%;
+    font-size: 4em;
+    text-align: center;
+    @include mobile(500px){
+        font-size: 3em;
+    }
+    @include mobile(1000px){
+    width: 100%;
+    }
+    
+}
+.sCovidData{
+    width: 70%;
+    // height: 60vh;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    background-color:colors(card);
+    margin-top: 2em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    margin-bottom: 1em;
+    .sCElm{
+        // background-color: yellow;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        h6{
+            margin: 1em 0;
+        }
+        p{
+            font-size: .8em;
+            margin-top: .2em;
+        }
+      
+    }
+    @include mobile(1200px){
+        width: 80%;
+    }
+    @include mobile(1000px){
+        width: 80%;
+        margin-top: 0;
+    }
+    @include mobile(700px){
+        width: 70%;
+    margin-top: 1em;
+
+        
+    }
+    @include mobile(600px){
+        width: 80%;
+
+        
+    }
+}
+
+.districtName{
+    width: 70%;
+    padding: 1em 2em;
+    h2{
+        font-weight: 200;
+        font-family: $secFont;
+        font-size: 1.7em;
+        letter-spacing: 1px;
+        color:colors(dRecovered);
+    }
+  
+
+
+}
+.dCovidData{
+    width: 70%;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    background-color:colors(card);
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.13);
+    margin-bottom: 2em;
+    .dCElm{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1em;
+        margin-bottom: 1em;
+    }
+}
+.numFormat{
+    font-size: 1.2em;
+    @include mobile(1080px){
+        font-size: 1em;
+    }
+    @include mobile(500px){
+        font-size: .8em;
+    }
+    @include mobile(390px){
+        font-size: .7em;
+    }
+}

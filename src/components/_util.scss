@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat';
+}
+html,body{
+    width:100%;
+    height:100%;
+}
+
+$secFont:"Voyage";
+$HinglishFont:"Samarkan";
+
+:root{
+    --background:#fff;
+    --card:#fff;
+    --secText:#828282;
+    --primText:#000;
+ 
+
+
+    --dRecovered:#788D46;
+    --recovered:#C9DE98;
+    --confirmed:#D18081;
+    --deceased:#5E503F;
+
+
+}
+
+$colors:(
+    'background':var(--background),
+    'card':var(--card),
+    'secText':var(--secText),
+    'primText':var(--primText),
+    'recovered':var(--recovered),
+    'confirmed':var(--confirmed),
+    'deceased':var(--deceased),
+    'dRecovered':var(--dRecovered)
+    
+);
+@function colors($color){
+    @return map-get($colors,$color);
+};
+
+@mixin flex($justify:space-between,$align:center) {
+    display:flex;
+    justify-content: $justify;
+    align-items:$align;
+
+}
+@mixin mobile($mobile){
+    @media(max-width:$mobile){
+        @content;
+    }
+}
+
+
+@font-face {
+    font-family: "Voyage";
+    src: url('../fonts/Voyage-Regular.ttf');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Samarkan";
+    src: url('../fonts/SAMAN___.TTF');
+    font-weight: 300;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Medium.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Montserrat";
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: 900;
+}
